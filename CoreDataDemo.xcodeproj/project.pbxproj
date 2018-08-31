@@ -11,8 +11,6 @@
 		C26D920A21392B72004FE1B0 /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C26D920921392B72004FE1B0 /* CocoaLumberjackSwift.framework */; };
 		C26D920D21392F2E004FE1B0 /* VocaMe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C26D920B21392F2E004FE1B0 /* VocaMe.xcdatamodeld */; };
 		C26D920F21392F86004FE1B0 /* VocaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26D920E21392F86004FE1B0 /* VocaManager.swift */; };
-		C26D921221392FB6004FE1B0 /* Voca+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26D921021392FB6004FE1B0 /* Voca+CoreDataClass.swift */; };
-		C26D921321392FB6004FE1B0 /* Voca+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26D921121392FB6004FE1B0 /* Voca+CoreDataProperties.swift */; };
 		C2DF96402137D65E00C7EA92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DF963F2137D65E00C7EA92 /* AppDelegate.swift */; };
 		C2DF96422137D65E00C7EA92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DF96412137D65E00C7EA92 /* ViewController.swift */; };
 		C2DF96452137D65E00C7EA92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2DF96432137D65E00C7EA92 /* Main.storyboard */; };
@@ -52,8 +50,6 @@
 		C26D920921392B72004FE1B0 /* CocoaLumberjackSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjackSwift.framework; path = Carthage/Build/iOS/CocoaLumberjackSwift.framework; sourceTree = "<group>"; };
 		C26D920C21392F2E004FE1B0 /* VocaMe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VocaMe.xcdatamodel; sourceTree = "<group>"; };
 		C26D920E21392F86004FE1B0 /* VocaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocaManager.swift; sourceTree = "<group>"; };
-		C26D921021392FB6004FE1B0 /* Voca+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Voca+CoreDataClass.swift"; sourceTree = "<group>"; };
-		C26D921121392FB6004FE1B0 /* Voca+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Voca+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C2DF963C2137D65E00C7EA92 /* CoreDataDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2DF963F2137D65E00C7EA92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2DF96412137D65E00C7EA92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +107,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C26D921421393AE2004FE1B0 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				C26D920E21392F86004FE1B0 /* VocaManager.swift */,
+				C26733202137F16700BAE678 /* DataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		C2DF96332137D65E00C7EA92 = {
 			isa = PBXGroup;
 			children = (
@@ -135,17 +140,14 @@
 		C2DF963E2137D65E00C7EA92 /* CoreDataDemo */ = {
 			isa = PBXGroup;
 			children = (
-				C26D921021392FB6004FE1B0 /* Voca+CoreDataClass.swift */,
-				C26D921121392FB6004FE1B0 /* Voca+CoreDataProperties.swift */,
+				C26D921421393AE2004FE1B0 /* Managers */,
 				C2DF963F2137D65E00C7EA92 /* AppDelegate.swift */,
 				C2DF96412137D65E00C7EA92 /* ViewController.swift */,
 				C2DF96432137D65E00C7EA92 /* Main.storyboard */,
 				C2DF96462137D65F00C7EA92 /* Assets.xcassets */,
 				C2DF96482137D65F00C7EA92 /* LaunchScreen.storyboard */,
 				C2DF964B2137D65F00C7EA92 /* Info.plist */,
-				C26733202137F16700BAE678 /* DataManager.swift */,
 				C26D920B21392F2E004FE1B0 /* VocaMe.xcdatamodeld */,
-				C26D920E21392F86004FE1B0 /* VocaManager.swift */,
 			);
 			path = CoreDataDemo;
 			sourceTree = "<group>";
@@ -342,8 +344,6 @@
 			files = (
 				C2DF96422137D65E00C7EA92 /* ViewController.swift in Sources */,
 				C26D920F21392F86004FE1B0 /* VocaManager.swift in Sources */,
-				C26D921321392FB6004FE1B0 /* Voca+CoreDataProperties.swift in Sources */,
-				C26D921221392FB6004FE1B0 /* Voca+CoreDataClass.swift in Sources */,
 				C26733212137F16700BAE678 /* DataManager.swift in Sources */,
 				C26D920D21392F2E004FE1B0 /* VocaMe.xcdatamodeld in Sources */,
 				C2DF96402137D65E00C7EA92 /* AppDelegate.swift in Sources */,
