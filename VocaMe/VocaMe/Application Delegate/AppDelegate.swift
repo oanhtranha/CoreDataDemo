@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  CoreDataDemo
+//  VocaMe
 //
-//  Created by Oanh tran on 8/30/18.
+//  Created by Oanh tran on 9/10/18.
 //  Copyright © 2018 activecog. All rights reserved.
 //
 
@@ -15,9 +15,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        let dataManager = DataManager(modelName: "VocaMe")
-        print(dataManager.managedObjectContext)
         return true
     }
 
