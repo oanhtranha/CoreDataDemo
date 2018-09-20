@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C21683B4215396D200E76BEE /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21683B3215396D200E76BEE /* NoteTableViewCell.swift */; };
 		C27E695121465D400031A4C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E695021465D400031A4C7 /* AppDelegate.swift */; };
 		C27E695321465D400031A4C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E695221465D400031A4C7 /* ViewController.swift */; };
 		C27E695621465D400031A4C7 /* Notes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C27E695421465D400031A4C7 /* Notes.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C21683B3215396D200E76BEE /* NoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
 		C27E694D21465D3F0031A4C7 /* VocaMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VocaMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C27E695021465D400031A4C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C27E695221465D400031A4C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			children = (
 				C2C8B44E2146935F008DB26F /* NotesViewController.swift */,
 				C2C8B45221469516008DB26F /* AddNoteViewController.swift */,
+				C21683B3215396D200E76BEE /* NoteTableViewCell.swift */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 				C2C8B45321469516008DB26F /* AddNoteViewController.swift in Sources */,
 				C2CF101321465DE400C8AE12 /* DataManager.swift in Sources */,
 				C27E6965214666750031A4C7 /* VocaMe.xcdatamodeld in Sources */,
+				C21683B4215396D200E76BEE /* NoteTableViewCell.swift in Sources */,
 				C27E695121465D400031A4C7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
