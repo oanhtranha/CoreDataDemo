@@ -14,6 +14,12 @@ class NoteTableViewCell: UITableViewCell {
     @IBOutlet private weak var contentLabel: UILabel!
     @IBOutlet private weak var updatedAtLabel: UILabel!
     
+    private lazy var updatedAtDateFormatter: DateFormatter = {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMM d, HH:mm"
+        return dateFormatter
+    }()
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -22,7 +28,6 @@ class NoteTableViewCell: UITableViewCell {
     func setup(with note: Note) {
         titleLabel.text =  note.title
         contentLabel.text =  note.contents
-//        updatedAtLabel.text[ =  note.updatedAt
+        updatedAtLabel.text =  updatedAtDateFormatter.string(from:note.updatedAtAsDate)
     }
-
 }

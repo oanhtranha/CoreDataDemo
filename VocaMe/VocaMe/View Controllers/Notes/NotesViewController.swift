@@ -28,6 +28,7 @@ class NotesViewController: UIViewController {
         guard let notes = notes else { return false}
         return notes.count > 0
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Notes"
@@ -114,9 +115,15 @@ extension NotesViewController : UITableViewDelegate, UITableViewDataSource {
 }
 
 extension Note {
-    
+
     var updatedAtAsDate: Date {
         guard let updatedAt = updatedAt else { return Date() }
-        return Date(timeIntervalSince1970: (createdAt?.timeIntervalSince1970)!)
+        return Date(timeIntervalSince1970: updatedAt.timeIntervalSince1970)
     }
+    
+    var createAtAsDate : Date {
+        guard let createdAt = createdAt else { return Date() }
+        return Date(timeIntervalSince1970: createdAt.timeIntervalSince1970)
+    }
+    
 }
