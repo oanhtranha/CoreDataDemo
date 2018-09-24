@@ -9,11 +9,16 @@
 /* Begin PBXBuildFile section */
 		C21683B4215396D200E76BEE /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C21683B3215396D200E76BEE /* NoteTableViewCell.swift */; };
 		C27E695121465D400031A4C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E695021465D400031A4C7 /* AppDelegate.swift */; };
-		C27E695321465D400031A4C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27E695221465D400031A4C7 /* ViewController.swift */; };
 		C27E695621465D400031A4C7 /* Notes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C27E695421465D400031A4C7 /* Notes.storyboard */; };
 		C27E695821465D410031A4C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C27E695721465D410031A4C7 /* Assets.xcassets */; };
 		C27E695B21465D410031A4C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C27E695921465D410031A4C7 /* LaunchScreen.storyboard */; };
 		C27E6965214666750031A4C7 /* VocaMe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C27E6963214666750031A4C7 /* VocaMe.xcdatamodeld */; };
+		C29C33E721588DD2004BC13A /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29C33E621588DD2004BC13A /* NoteViewController.swift */; };
+		C29C33E92158EDF4004BC13A /* Category.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C29C33E82158EDF4004BC13A /* Category.storyboard */; };
+		C29C33EC2158F118004BC13A /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29C33EB2158F118004BC13A /* CategoriesViewController.swift */; };
+		C29C33EE2158F130004BC13A /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29C33ED2158F130004BC13A /* CategoryViewController.swift */; };
+		C29C33F02158F140004BC13A /* AddCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29C33EF2158F140004BC13A /* AddCategoryViewController.swift */; };
+		C29C33F22158F156004BC13A /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29C33F12158F156004BC13A /* CategoryTableViewCell.swift */; };
 		C2C8B44F2146935F008DB26F /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C8B44E2146935F008DB26F /* NotesViewController.swift */; };
 		C2C8B45321469516008DB26F /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C8B45221469516008DB26F /* AddNoteViewController.swift */; };
 		C2CF101321465DE400C8AE12 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CF101221465DE400C8AE12 /* DataManager.swift */; };
@@ -23,12 +28,17 @@
 		C21683B3215396D200E76BEE /* NoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
 		C27E694D21465D3F0031A4C7 /* VocaMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VocaMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C27E695021465D400031A4C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C27E695221465D400031A4C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C27E695521465D400031A4C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Notes.storyboard; sourceTree = "<group>"; };
 		C27E695721465D410031A4C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C27E695A21465D410031A4C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C27E695C21465D410031A4C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C27E6964214666750031A4C7 /* VocaMe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VocaMe.xcdatamodel; sourceTree = "<group>"; };
+		C29C33E621588DD2004BC13A /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
+		C29C33E82158EDF4004BC13A /* Category.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Category.storyboard; sourceTree = "<group>"; };
+		C29C33EB2158F118004BC13A /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
+		C29C33ED2158F130004BC13A /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		C29C33EF2158F140004BC13A /* AddCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCategoryViewController.swift; sourceTree = "<group>"; };
+		C29C33F12158F156004BC13A /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		C2C8B44E2146935F008DB26F /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		C2C8B45221469516008DB26F /* AddNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
 		C2CF101221465DE400C8AE12 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
@@ -83,12 +93,24 @@
 			path = "Core Data";
 			sourceTree = "<group>";
 		};
+		C29C33EA2158F103004BC13A /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				C29C33EB2158F118004BC13A /* CategoriesViewController.swift */,
+				C29C33ED2158F130004BC13A /* CategoryViewController.swift */,
+				C29C33EF2158F140004BC13A /* AddCategoryViewController.swift */,
+				C29C33F12158F156004BC13A /* CategoryTableViewCell.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 		C2C8B44D21469330008DB26F /* Notes */ = {
 			isa = PBXGroup;
 			children = (
 				C2C8B44E2146935F008DB26F /* NotesViewController.swift */,
 				C2C8B45221469516008DB26F /* AddNoteViewController.swift */,
 				C21683B3215396D200E76BEE /* NoteTableViewCell.swift */,
+				C29C33E621588DD2004BC13A /* NoteViewController.swift */,
 			);
 			path = Notes;
 			sourceTree = "<group>";
@@ -104,8 +126,8 @@
 		C2CF10142146613C00C8AE12 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C29C33EA2158F103004BC13A /* Categories */,
 				C2C8B44D21469330008DB26F /* Notes */,
-				C27E695221465D400031A4C7 /* ViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -115,6 +137,7 @@
 			children = (
 				C27E695921465D410031A4C7 /* LaunchScreen.storyboard */,
 				C27E695421465D400031A4C7 /* Notes.storyboard */,
+				C29C33E82158EDF4004BC13A /* Category.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -201,6 +224,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C29C33E92158EDF4004BC13A /* Category.storyboard in Resources */,
 				C27E695B21465D410031A4C7 /* LaunchScreen.storyboard in Resources */,
 				C27E695821465D410031A4C7 /* Assets.xcassets in Resources */,
 				C27E695621465D400031A4C7 /* Notes.storyboard in Resources */,
@@ -214,12 +238,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C27E695321465D400031A4C7 /* ViewController.swift in Sources */,
+				C29C33E721588DD2004BC13A /* NoteViewController.swift in Sources */,
 				C2C8B44F2146935F008DB26F /* NotesViewController.swift in Sources */,
 				C2C8B45321469516008DB26F /* AddNoteViewController.swift in Sources */,
 				C2CF101321465DE400C8AE12 /* DataManager.swift in Sources */,
 				C27E6965214666750031A4C7 /* VocaMe.xcdatamodeld in Sources */,
 				C21683B4215396D200E76BEE /* NoteTableViewCell.swift in Sources */,
+				C29C33F22158F156004BC13A /* CategoryTableViewCell.swift in Sources */,
+				C29C33F02158F140004BC13A /* AddCategoryViewController.swift in Sources */,
+				C29C33EC2158F118004BC13A /* CategoriesViewController.swift in Sources */,
+				C29C33EE2158F130004BC13A /* CategoryViewController.swift in Sources */,
 				C27E695121465D400031A4C7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
