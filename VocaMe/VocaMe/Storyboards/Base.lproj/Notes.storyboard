@@ -194,6 +194,7 @@
                                 <state key="normal" title="Edit"/>
                                 <connections>
                                     <action selector="editCategory:" destination="IHG-Hm-yPE" eventType="touchUpInside" id="s3f-od-rLo"/>
+                                    <segue destination="Omc-PP-nkM" kind="push" identifier="CategoriesViewController" id="QnG-CG-ZAh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -228,6 +229,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BDZ-dO-5s7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2193" y="-928"/>
+        </scene>
+        <!--Category-->
+        <scene sceneID="RJc-P7-RiO">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Category" id="Omc-PP-nkM" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Jef-2F-pGl"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w1d-xZ-lwI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2823" y="-1052"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1QB-7f-5Fb">

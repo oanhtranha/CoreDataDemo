@@ -8,6 +8,10 @@
 
 import UIKit
 
+private enum Segue {
+    static let Categoies = "CategoriesViewController"
+}
+
 class NoteViewController: UIViewController {
 
     @IBOutlet private weak var textView: UITextView!
@@ -31,6 +35,20 @@ class NoteViewController: UIViewController {
         
         note?.updatedAt = Date()
         note?.contents = textView.text
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let indetifier = segue.identifier else {
+            return
+        }
+        
+        switch indetifier {
+        case Segue.Categoies:
+            guard let destionation  = segue.destination as? CategoriesViewController else { return }
+            destionation.note =  note
+        default:
+            break
+        }
     }
     
     private func setupView() {

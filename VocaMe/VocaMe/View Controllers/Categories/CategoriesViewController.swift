@@ -180,6 +180,15 @@ extension CategoriesViewController : UITableViewDataSource {
         return section.numberOfObjects
     }
     
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let category = fetchedResultsController.object(at: indexPath)
+        note?.category = category
+        
+        let _ =  navigationController?.popViewController(animated: true)
+        
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Dequeue Reusable Cell
         guard let cell = tableView.dequeueReusableCell(withIdentifier: CategoryTableViewCell.reuseIdentifier, for: indexPath) as? CategoryTableViewCell else {
@@ -191,6 +200,8 @@ extension CategoriesViewController : UITableViewDataSource {
         
         return cell
     }
+    
+    
     
     func configure(_ cell: CategoryTableViewCell, at indexPath: IndexPath) {
         // Fetch Note
