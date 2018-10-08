@@ -22,6 +22,11 @@
 		C2C8B44F2146935F008DB26F /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C8B44E2146935F008DB26F /* NotesViewController.swift */; };
 		C2C8B45321469516008DB26F /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C8B45221469516008DB26F /* AddNoteViewController.swift */; };
 		C2CF101321465DE400C8AE12 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CF101221465DE400C8AE12 /* DataManager.swift */; };
+		C2DC5643215DFF71007FAE18 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DC5642215DFF71007FAE18 /* UIColor.swift */; };
+		C2DC5646215DFFD7007FAE18 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DC5645215DFFD7007FAE18 /* Category.swift */; };
+		C2DC5649215E008F007FAE18 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DC5648215E008F007FAE18 /* Note.swift */; };
+		C2DC564C215E00A7007FAE18 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DC564B215E00A7007FAE18 /* Category.swift */; };
+		C2DC564E215E02A4007FAE18 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2DC564D215E02A4007FAE18 /* ColorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +47,11 @@
 		C2C8B44E2146935F008DB26F /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		C2C8B45221469516008DB26F /* AddNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
 		C2CF101221465DE400C8AE12 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		C2DC5642215DFF71007FAE18 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		C2DC5645215DFFD7007FAE18 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		C2DC5648215E008F007FAE18 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		C2DC564B215E00A7007FAE18 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		C2DC564D215E02A4007FAE18 /* ColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +84,7 @@
 		C27E694F21465D3F0031A4C7 /* VocaMe */ = {
 			isa = PBXGroup;
 			children = (
+				C2DC5644215DFFC0007FAE18 /* Extensions */,
 				C27E69622146624A0031A4C7 /* Core Data */,
 				C2CF10182146618B00C8AE12 /* Application Delegate */,
 				C2CF10172146617000C8AE12 /* Supporting Files */,
@@ -88,6 +99,7 @@
 		C27E69622146624A0031A4C7 /* Core Data */ = {
 			isa = PBXGroup;
 			children = (
+				C2DC5647215E0024007FAE18 /* Extensions */,
 				C27E6963214666750031A4C7 /* VocaMe.xcdatamodeld */,
 			);
 			path = "Core Data";
@@ -100,6 +112,7 @@
 				C29C33ED2158F130004BC13A /* CategoryViewController.swift */,
 				C29C33EF2158F140004BC13A /* AddCategoryViewController.swift */,
 				C29C33F12158F156004BC13A /* CategoryTableViewCell.swift */,
+				C2DC564D215E02A4007FAE18 /* ColorViewController.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -164,6 +177,24 @@
 				C27E695021465D400031A4C7 /* AppDelegate.swift */,
 			);
 			path = "Application Delegate";
+			sourceTree = "<group>";
+		};
+		C2DC5644215DFFC0007FAE18 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C2DC5642215DFF71007FAE18 /* UIColor.swift */,
+				C2DC5645215DFFD7007FAE18 /* Category.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C2DC5647215E0024007FAE18 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C2DC5648215E008F007FAE18 /* Note.swift */,
+				C2DC564B215E00A7007FAE18 /* Category.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +270,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C29C33E721588DD2004BC13A /* NoteViewController.swift in Sources */,
+				C2DC5643215DFF71007FAE18 /* UIColor.swift in Sources */,
+				C2DC564E215E02A4007FAE18 /* ColorViewController.swift in Sources */,
 				C2C8B44F2146935F008DB26F /* NotesViewController.swift in Sources */,
 				C2C8B45321469516008DB26F /* AddNoteViewController.swift in Sources */,
 				C2CF101321465DE400C8AE12 /* DataManager.swift in Sources */,
@@ -246,6 +279,9 @@
 				C21683B4215396D200E76BEE /* NoteTableViewCell.swift in Sources */,
 				C29C33F22158F156004BC13A /* CategoryTableViewCell.swift in Sources */,
 				C29C33F02158F140004BC13A /* AddCategoryViewController.swift in Sources */,
+				C2DC5649215E008F007FAE18 /* Note.swift in Sources */,
+				C2DC5646215DFFD7007FAE18 /* Category.swift in Sources */,
+				C2DC564C215E00A7007FAE18 /* Category.swift in Sources */,
 				C29C33EC2158F118004BC13A /* CategoriesViewController.swift in Sources */,
 				C29C33EE2158F130004BC13A /* CategoryViewController.swift in Sources */,
 				C27E695121465D400031A4C7 /* AppDelegate.swift in Sources */,

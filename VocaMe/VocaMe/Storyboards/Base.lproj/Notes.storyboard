@@ -53,19 +53,33 @@
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UXn-UM-9A4">
+                                                    <rect key="frame" x="0.0" y="0.0" width="5" height="54.5"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="5" id="fX7-hK-45q"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="UXn-UM-9A4" firstAttribute="height" secondItem="M45-d7-hXJ" secondAttribute="height" id="1jr-g5-bpE"/>
                                                 <constraint firstAttribute="bottom" secondItem="Fac-kP-i8g" secondAttribute="bottom" constant="5" id="4PS-pd-v9G"/>
                                                 <constraint firstItem="Zi3-58-pFD" firstAttribute="top" secondItem="M45-d7-hXJ" secondAttribute="top" constant="5" id="T5u-r3-1eP"/>
                                                 <constraint firstAttribute="trailing" secondItem="Fac-kP-i8g" secondAttribute="trailing" constant="16" id="TWo-bo-3D4"/>
                                                 <constraint firstItem="Fac-kP-i8g" firstAttribute="leading" secondItem="M45-d7-hXJ" secondAttribute="leading" constant="16" id="TbW-2L-We1"/>
                                                 <constraint firstAttribute="trailing" secondItem="qAG-TS-Gcp" secondAttribute="trailing" constant="16" id="XI1-s5-nNf"/>
                                                 <constraint firstItem="Zi3-58-pFD" firstAttribute="leading" secondItem="M45-d7-hXJ" secondAttribute="leading" constant="16" id="aqX-ye-ezb"/>
+                                                <constraint firstItem="UXn-UM-9A4" firstAttribute="centerY" secondItem="M45-d7-hXJ" secondAttribute="centerY" id="htN-H2-ZNX"/>
+                                                <constraint firstItem="UXn-UM-9A4" firstAttribute="height" secondItem="M45-d7-hXJ" secondAttribute="height" id="rTR-wz-ovu"/>
                                                 <constraint firstItem="qAG-TS-Gcp" firstAttribute="leading" secondItem="Zi3-58-pFD" secondAttribute="trailing" priority="250" constant="10" id="tkj-pV-tte"/>
                                                 <constraint firstItem="qAG-TS-Gcp" firstAttribute="centerY" secondItem="Zi3-58-pFD" secondAttribute="centerY" id="ttJ-hn-ErV"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <constraints>
+                                            <constraint firstItem="UXn-UM-9A4" firstAttribute="leading" secondItem="JVN-i2-fy7" secondAttribute="leading" id="YHa-ku-M5L"/>
+                                        </constraints>
                                         <connections>
+                                            <outlet property="categoryViewColor" destination="UXn-UM-9A4" id="PwG-Xj-p9N"/>
                                             <outlet property="contentLabel" destination="qAG-TS-Gcp" id="ZTF-xH-V0w"/>
                                             <outlet property="titleLabel" destination="Zi3-58-pFD" id="uGZ-uj-jxq"/>
                                             <outlet property="updatedAtLabel" destination="Fac-kP-i8g" id="qFr-wH-O3i"/>

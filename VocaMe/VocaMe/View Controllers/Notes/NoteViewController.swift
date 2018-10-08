@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import CoreData
 private enum Segue {
     static let Categoies = "CategoriesViewController"
 }
@@ -24,6 +24,7 @@ class NoteViewController: UIViewController {
         super.viewDidLoad()
         title = "Edit Note"
         setupView()
+        setupNotificationHandling()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -54,6 +55,12 @@ class NoteViewController: UIViewController {
     private func setupView() {
         setupTitle()
         setupContent()
+        updateCategoryLabel()
+    }
+    
+    private func updateCategoryLabel() {
+        // Configure Category Label
+        categoryLabel.text = note?.category?.name ?? "No Category"
     }
     
     private func setupTitle() {
@@ -67,4 +74,26 @@ class NoteViewController: UIViewController {
     
     @IBAction func editCategory(_ sender: Any) {
     }
+    
+    // MARK: - Notification Handling
+    
+    @objc private func managedObjectContextObjectsDidChange(_ notification: Notification) {
+        guard let userInfo = notification.userInfo else { return }
+        guard let updates = userInfo[NSUpdatedObjectsKey] as? Set<NSManagedObject> else { return }
+        
+        if (updates.filter { return $0 == note }).count > 0 {
+            updateCategoryLabel()
+        }
+    }
+    
+    // MARK: - Helper Methods
+    
+    private func setupNotificationHandling() {
+        let notificationCenter = NotificationCenter.default
+        notificationCenter.addObserver(self,
+                                       selector: #selector(managedObjectContextObjectsDidChange(_:)),
+                                       name: Notification.Name.NSManagedObjectContextObjectsDidChange,
+                                       object: note?.managedObjectContext)
+    }
+
 }
